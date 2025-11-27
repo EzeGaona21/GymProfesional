@@ -1,0 +1,15 @@
+# Ignorar archivos temporales y grandes
+*.hprof
+
+# Carpetas de build y caché
+/build
+/app/build
+/.gradle
+/.idea
+*.iml
+
+# Otros archivos generados
+/local.properties
+/captures
+.DS_Store
+google-services.json

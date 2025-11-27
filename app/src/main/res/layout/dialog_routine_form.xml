@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del ejercicio" />
+
+        <EditText
+            android:id="@+id/etGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grupo muscular (ej: Pecho)"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etSets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Series (ej: 4)"
+            android:inputType="number"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etReps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repeticiones (ej: 10)"
+            android:inputType="number"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descanso (ej: 60s)"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre drawable imagen (ej: pesa)"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

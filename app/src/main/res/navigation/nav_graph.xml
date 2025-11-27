@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ezegaona.gympro.ui.auth.LoginFragment"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.ezegaona.gympro.ui.auth.RegisterFragment"
+        android:label="Registro" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ezegaona.gympro.ui.home.HomeFragment"
+        android:label="GymPro" >
+        <action
+            android:id="@+id/action_homeFragment_to_workoutsFragment"
+            app:destination="@id/workoutsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workoutsFragment"
+        android:name="com.ezegaona.gympro.ui.workouts.WorkoutsFragment"
+        android:label="Entrenamientos" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.ezegaona.gympro.ui.profile.ProfileFragment"
+        android:label="Perfil" />
+</navigation>
